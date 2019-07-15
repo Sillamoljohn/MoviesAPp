@@ -1,0 +1,25 @@
+<section class="movie-cards">
+    <div class="container">
+        <div class=" row">
+            <div class=" col-3 mb-4" *ngFor="let data of movieData">
+                <div class="card">
+                    <div class="card-img">
+                        <img class="card-img-top" src="{{data.Poster}}" alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{data.Title}}</h5>
+                        <p class="card-text">Type:- {{data.Type}}</p>
+                        <p class="card-text">Year:- {{data.Year}}</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">IMDB id :- {{data.imdbID}}</small>
+                    </div>
+                    <div class="overlay">
+                        <div class="view">
+                            <p  (click)="getDetails(data.Title)">View More</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

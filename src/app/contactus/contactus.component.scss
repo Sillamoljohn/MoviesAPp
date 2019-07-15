@@ -1,0 +1,32 @@
+.contact-form {
+    padding: 30px 40px;
+    background: #00000066;
+    width: 30%;
+    margin: 100px auto;
+    h4 {
+        background: #512da8;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 4px;
+    }
+    label {
+        color: white;
+    }
+    .btn {
+        background: #512da8;
+        color: white;
+    }
+    .form-group {
+        margin: 20px 0;
+    }
+    .upload-btn {
+        float: right;
+        background: #512da8;
+        border: none;
+        padding: 7px 15px;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,59 @@
+.movie-detail {
+    padding: 100px 0 50px;
+    .topHead {
+        padding: 20px;
+        width: 100%;
+        border-radius: 4px;
+        background: #0000009e;
+        p {
+            color: white;
+            margin: 0;
+            font-size: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #512da8;
+            font-family: fantasy;
+            span {
+                float: right;
+            }
+        }
+    }
+    .otherinfo {
+        padding-top: 10px;
+        display: flex;
+        p {
+            border: none;
+            padding: 0;
+            font-size: 16px;
+            font-family: cursive;
+            padding: 0 15px;
+            border-right: 2px solid #512da8;
+            color: white;
+            &:first-child {
+                padding-left: 0;
+            }
+            &:last-child {
+                border-right: 0;
+            }
+        }
+    }
+    .movie-wrap {
+        background: #0000009e;
+        padding: 20px;
+        border-radius: 4px;
+        color: white;
+        .movie-data {
+            color: white;
+            border: 1px solid #512da8;
+            border-radius: 3px;
+            padding: 10px;
+            p {
+                color: #a985ff;
+                font-family: sans-serif;
+                text-shadow: 0px 0px 2px black;
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+}

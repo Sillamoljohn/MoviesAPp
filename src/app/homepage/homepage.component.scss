@@ -1,0 +1,49 @@
+.movie-cards {
+    padding: 200px 0 100px;
+    .card {
+        position: relative;
+        .card-img {
+            height: 370px;
+            overflow: hidden;
+        }
+        .overlay {
+            position: absolute;
+            background: #000000cc;
+            height: 100%;
+            width: 100%;
+            transition: 1s ease-in linear;
+            opacity: 0;
+            transition: .5s ease;
+            .view {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                p {
+                    color: #512da8;
+                    padding: 5px 10px;
+                    border: 1px solid #512da8;
+                    border-radius: 3px;
+                    width: 150px;
+                    background: #ffffff87;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: .5s ease;
+                    &:hover {
+                        background: white;
+                        transition: .5s ease;
+                    }
+                }
+            }
+        }
+        &:hover {
+            border: 2px solid #512da8;
+            .overlay {
+                transition: 1s ease-out linear;
+                opacity: 1;
+                transition: .5s ease;
+            }
+        }
+    }
+}
